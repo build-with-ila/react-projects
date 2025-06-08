@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+    font-family: "Neucha", cursive;
+}
+
+.container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.TodoForm {
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+}
+
+.textInput {
+    width: 80%;
+    border-style: none;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.button {
+    border:none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.allTodos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.singleTodo {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px  ;
+    margin: 5px 0;
+    background-color: #5dadf8;
+    border-radius: 50px;
+}
+
+.todoText {
+    flex: 1;
+}
+
+.users {
+    margin: 20px;
+    padding: 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.users__single {
+    height: 150px;
+    padding: 20px;
+    background-color: rgb(220,220,220);
+    text-align: center;
+    border-radius: center;
+    cursor: pointer;
+}
+
+.users__single > img {
+    width: 100%;
+    height: 95%;
+    /*object-fit: cover;*/
+    margin-bottom: 3px;
+}
+
+.pagination {
+    padding: 10px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination > span{
+    padding: 15px 20px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.pagination__selected {
+    background-color: rgb(220, 220, 220);
+}
+.pagination__disable {
+    opacity: 0;
+}
